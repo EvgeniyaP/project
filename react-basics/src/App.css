@@ -1,0 +1,47 @@
+html, body, .root, .App {
+  height: 100%;
+}
+.wrapper{
+  padding-top: 20px;
+  text-align: left;
+}
+.treeview{
+  padding-left: 100px;
+}
+.treeview p{
+  text-align: left;
+  display: inline-block;
+  vertical-align: baseline;
+  padding-left: 37px;
+  color: #252b33;
+}
+.file{
+  width: 60px;
+  height: 81px;
+  background: url('file.jpg');
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 10px;
+}
+.close{
+  width: 63px;
+  height: 114px;
+  background: url('icon-arrow-down.png');
+  transform: rotate(90deg);
+  transition: all .5s ease;
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.open{
+  width: 63px;
+  height: 114px;
+  background: url('icon-arrow-down.png');
+  transition: all .5s ease;
+  transform: rotate(180deg);
+  background-repeat: no-repeat;
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+}
