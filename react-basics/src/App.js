@@ -19,7 +19,7 @@ class App extends Component {
   render() {
     return (
             <div className="wrapper">
-                <Directory data = {this.state.data} name = "root"/>
+                <Directory data = {this.state.data} />
             </div>
     );
   }
