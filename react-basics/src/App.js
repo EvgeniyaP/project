@@ -12,14 +12,14 @@ class App extends Component {
       fetch('https://raw.githubusercontent.com/kottans/chernivtsi-frontend-2017/master/homeworks/react-basic/filetree.json')
           .then(response => response.json())
           .then(data =>{
-              this.setState({data: this.state.data.concat(data)})
+              this.setState({data: data})
           })
           .catch(err => console.log(err));
   }
   render() {
     return (
             <div className="wrapper">
-                <Directory data = {this.state.data} />
+                <Directory data = {this.state.data.data} name = {this.state.data.type} />
             </div>
     );
   }
